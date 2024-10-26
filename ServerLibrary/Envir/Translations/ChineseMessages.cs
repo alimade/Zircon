@@ -173,6 +173,7 @@ namespace Server.Envir.Translations
         public override string GuildMemberKicked { get; set; } = "{0}被{1}驱逐出行会";
         public override string GuildKicked { get; set; } = "你被{0}驱逐出行会";
         public override string GuildManagePermission { get; set; } = "你没有管理行会的权限";
+        public override string GuildCastleRepairPermission { get; set; } = "You do not have permission to Repair Castle Defenses.";
         public override string GuildMemberLimit { get; set; } = "行会已达到最大成员上限";
         public override string GuildMemberCost { get; set; } = "行会没有足够的资金来扩展行会成员上限";
         public override string GuildStorageLimit { get; set; } = "行会仓库已达到最大空间上限";
@@ -208,7 +209,8 @@ namespace Server.Envir.Translations
         public override string GuildLeave { get; set; } = "你已经离开了行会";
         public override string GuildMemberLeave { get; set; } = "{0}已经离开行会";
         public override string GuildWarDeath { get; set; } = "{3}行会的{2}在行会战里击败{1}行会的{0}";
-
+        public override string GuildRepairCastleGatesCost { get; set; } = "Unable to repair gates, Your Guild needs another {0:#,##0} Gold.";
+        public override string GuildRepairCastleGuardsCost { get; set; } = "Unable to repair guards, Your Guild needs another {0:#,##0} Gold.";
 
         public override string GroupNoGroup { get; set; } = "你不在一个队伍中";
         public override string GroupNotLeader { get; set; } = "你不是队长";
@@ -305,6 +307,7 @@ namespace Server.Envir.Translations
         public override string InstanceSafeZoneOnly { get; set; } = "You must be in a safe zone to join instance.";
         public override string InstanceNotInGroup { get; set; } = "You must be in a group to join instance.";
         public override string InstanceNotInGuild { get; set; } = "You must be in a guild to join instance.";
+        public override string InstanceNotInCastle { get; set; } = "Your guild must own a castle to join instance.";
         public override string InstanceTooFewInGroup { get; set; } = "Minimum {0} people required to join instance.";
         public override string InstanceTooManyInGroup { get; set; } = "Maximum {0} people required to join instance.";
         public override string InstanceConnectRegionNotSet { get; set; } = "Connect region has not been setup for instance.";

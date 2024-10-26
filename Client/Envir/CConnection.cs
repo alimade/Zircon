@@ -3970,6 +3970,8 @@ namespace Client.Envir
                 ob.NameChanged();
 
             GameScene.Game.GuildBox.CastlePanels[castle].Update();
+
+            GameScene.Game.GuildBox.RefreshCastleControls();
         }
         public void Process(S.GuildConquestDate p)
         {
